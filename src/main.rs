@@ -9,6 +9,7 @@ fn main() {
         eprintln!("{}", err);
         process::exit(1);
     });
+    
 
     if let Err(e) = minigrep::run(config) {
         eprintln!("{}", e);
